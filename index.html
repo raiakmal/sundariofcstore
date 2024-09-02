@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <nav class="bg-white p-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div>
+          <a href="index.html"><img src="assets/logo.svg" alt="logo-sundari" class="w-20 rounded-full" /></a>
+        </div>
+        <!-- Link Nav -->
+        <div class="hidden md:flex space-x-8 mx-auto md:text-xl font-medium">
+          <a href="index.html" class="text-green-900 hover:text-green-950">Beranda</a>
+          <a href="#" class="text-green-900 hover:text-green-950">Affiliate</a>
+          <a href="#" class="text-green-900 hover:text-green-950">Katalog</a>
+          <a href="#" class="text-green-900 hover:text-green-950">Tentang</a>
+          <a href="#" class="text-green-900 hover:text-green-950">Kontak</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-green-900 hover:text-green-950 focus:outline-none">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Nav -->
+      <div id="menu" class="hidden md:hidden mt-4">
+        <a href="index.html" class="block px-4 py-2 text-green-900 hover:text-green-950">Beranda</a>
+        <a href="#" class="block px-4 py-2 text-green-900 hover:text-green-950">Affiliate</a>
+        <a href="#" class="block px-4 py-2 text-green-900 hover:text-green-950">Katalog</a>
+        <a href="#" class="block px-4 py-2 text-green-900 hover:text-green-950">Tentang</a>
+        <a href="#" class="block px-4 py-2 text-green-900 hover:text-green-950">Kontak</a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Carousel -->
+    <div class="carousel relative h-[600px] md:mt-[120px]">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="assets/carousel/carousel1.png" alt="carousel-1" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/carousel/carousel2.png" alt="carousel-2" />
+        </div>
+      </div>
+    </div>
+    <!-- End Carousel -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
