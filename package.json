@@ -4,5 +4,8 @@
   },
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "remixicon": "^4.3.0"
   }
 }

@@ -17,3 +17,12 @@
   object-fit: cover;
   border-radius: 30px;
 }
+
+/* Custom Scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #66776a;
+  border-radius: 8px;
+}
